@@ -1,3 +1,12 @@
+---
+import Navigatie from '../components/Navigatie.astro';
+import Footer from '../components/Footer.astro';
+import Over from '../components/Over.astro';
+import Verhuur from '../components/Verhuur.astro';
+import Evenementen from '../components/Evenementen.astro';
+import Contact from '../components/Contact.astro';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,8 +16,15 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>VZW Den Traveir</title>
 	</head>
+	<header>
+		<Navigatie />
+	</header>
 	<body>
-		<slot />
+		<Over />
+		<Verhuur />
+		<Evenementen />
+		<Contact />
+		<Footer />
 	</body>
 </html>
 

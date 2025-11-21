@@ -5,9 +5,119 @@ import Over from '../components/Over.astro';
 import Verhuur from '../components/Verhuur.astro';
 import Evenementen from '../components/Evenementen.astro';
 import Contact from '../components/Contact.astro';
+import Header from '../components/Header.astro';
 
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+	<Navigatie />
+    <Header />
+	<Over />
+	<Verhuur />
+	<Evenementen />
+	<Contact />
+	<Footer />
 </Layout>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+		color: #333;
+		line-height: 1.6;
+        background-color: #F2EEE1;
+	}
+
+	section {
+		padding: 4rem 2rem;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#navigation {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		min-height: auto;
+		padding: 0;
+        border-bottom: 1px solid #B82424;
+  		padding-bottom: 5px;
+        background-color: #F2EEE1;
+	}
+
+	body {
+		padding-top: 60px;
+	}
+
+	nav {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 2rem;
+	}
+
+	.navigatie__left {
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+		list-style: none;
+	}
+
+	.navigatie__link {
+		color: #B82424;
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		padding: 0.5rem 0;
+		border-bottom: 2px solid transparent;
+	}
+
+	.navigatie__link:hover {
+		border-bottom-color: #B82424;
+		opacity: 0.8;
+	}
+
+	.navigatie-right button {
+		background: white;
+		color: #667eea;
+		border: none;
+		padding: 0.7rem 1.5rem;
+		border-radius: 25px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.navigatie-right button:hover {
+		transform: translateY(-2px);
+	}
+
+	#about, #rental, #events, #contact {
+	}
+
+	#about {
+	}
+
+	#footer {
+		color: white;
+		padding: 2rem;
+		text-align: center;
+		min-height: auto;
+	}
+</style>

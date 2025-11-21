@@ -1,0 +1,111 @@
+---
+import night from '../assets/traveir_at_night.jpg';
+import Layout from '../layouts/Layout.astro';
+---
+
+<header class="site-header">
+	<div class="site-header__inner">
+		<div class="site-header__media">
+			<img src={night.src} alt="Traveir at night" class="site-header__img" />
+		</div>
+		<div class="site-header__content">
+			<h1 class="site-header__title">Jeugdhuis VZW Den Traveir</h1>
+			<p class="site-header__lead">Een warme plek voor evenementen, verhuur en samenzijn — gelegen in het hart van onze gemeenschap. Ontdek onze verhuuropties, aankomende evenementen en neem contact op voor vragen of reserveringen.</p>
+		</div>
+	</div>
+</header>
+
+<style>
+	.site-header {
+		width: 100%;
+		padding: 2.5rem 0rem;
+	}
+
+	.site-header__inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		gap: 7rem;
+		align-items: center;
+	}
+
+	.site-header__media {
+		flex: 0 0 45%;
+        z-index: -1;
+	}
+
+	.site-header__img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+	}
+
+	.site-header__content {
+		flex: 1 1 55%;
+        padding-right: 1rem;
+	}
+
+	.site-header__title {
+		font-size: 3rem;
+        max-width: 13ch;
+		margin-bottom: 0.5rem;
+		color: #B82424;
+        font-family: Creolia, sans-serif;
+	}
+
+	.site-header__lead {
+		color: #B82424;
+		margin-bottom: 1.25rem;
+		line-height: 1.5;
+	}
+
+	.site-header__cta {
+		display: inline-block;
+		background: #B82424;
+		color: #fff;
+		padding: 0.65rem 1.1rem;
+		border-radius: 22px;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	@media (max-width: 900px) {
+		.site-header__inner {
+			flex-direction: column;
+			align-items: stretch;
+            gap: 3rem;
+		}
+
+		.site-header__media {
+			flex: none;
+			order: 1;
+		}
+
+		.site-header__content {
+			order: 2;
+		}
+
+		.site-header__title {
+			font-size: 2.5rem;
+            max-width: 13ch;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.site-header {
+			padding: 1.6rem 0rem;
+		}
+
+		.site-header__img {
+		}
+
+		.site-header__title {
+			font-size: 2.25rem;
+            max-width: 13ch;
+		}
+        .site-header__content {
+			padding: 0rem 2rem 0rem 2rem;
+		}
+	}
+</style>

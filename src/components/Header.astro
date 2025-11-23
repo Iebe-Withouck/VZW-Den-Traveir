@@ -1,5 +1,5 @@
 ---
-import night from '../assets/traveir_at_night.jpg';
+import night from '../assets/traveir_at_night.png';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -18,32 +18,34 @@ import Layout from '../layouts/Layout.astro';
 <style>
 	.site-header {
 		width: 100%;
-		padding: 2.5rem 0rem;
+		border-bottom: #B82424 1px solid;
 	}
 
 	.site-header__inner {
-		max-width: 1200px;
-		margin: 0 auto;
 		display: flex;
-		gap: 7rem;
-		align-items: center;
+		gap: 0;
+		align-items: stretch;
 	}
 
 	.site-header__media {
-		flex: 0 0 45%;
+		flex: 0 0 50%;
         z-index: -1;
 	}
 
 	.site-header__img {
-		width: 100%;
+		width: 80%;
 		height: auto;
 		display: block;
 		object-fit: cover;
 	}
 
 	.site-header__content {
-		flex: 1 1 55%;
-        padding-right: 1rem;
+		flex: 1 1 50%;
+        padding: 2.5rem 2rem;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.site-header__title {
@@ -90,6 +92,10 @@ import Layout from '../layouts/Layout.astro';
 			font-size: 2.5rem;
             max-width: 13ch;
 		}
+
+		.site-header__img {
+			width: 100%;
+		}
 	}
 
 	@media (max-width: 480px) {
@@ -98,6 +104,7 @@ import Layout from '../layouts/Layout.astro';
 		}
 
 		.site-header__img {
+			width: 100%;
 		}
 
 		.site-header__title {

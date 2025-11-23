@@ -1,0 +1,279 @@
+---
+---
+
+<section id="bestuur" class="bestuur-section">
+	<div class="bestuur-container">
+		
+		<div class="bestuur-grid">
+			<div class="bestuur-card">
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+1" alt="Bestuurslid" />
+				</div>
+				<h3 class="card-name">Siebe Selschotter</h3>
+				<p class="card-function">Voorzitter, Klusjesdienst</p>
+			</div>
+
+			<div class="bestuur-card">
+				<p class="card-function">Minivoetbal Coach</p>
+				<h3 class="card-name">Niels Berquin</h3>
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+2" alt="Bestuurslid" />
+				</div>
+			</div>
+
+			<div class="bestuur-card">
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+3" alt="Bestuurslid" />
+				</div>
+				<h3 class="card-name">Louïs Vanhie</h3>
+				<p class="card-function">AB-Inbev Contacteur</p>
+			</div>
+
+			<div class="bestuur-card">
+				<p class="card-function">Reclame & Socials</p>
+				<h3 class="card-name">Lomme Tack</h3>
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+4" alt="Bestuurslid" />
+				</div>
+			</div>
+
+			<div class="bestuur-card">
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+5" alt="Bestuurslid" />
+				</div>
+				<h3 class="card-name">Iebe Withouck</h3>
+				<p class="card-function">Klusjesdienst</p>
+			</div>
+
+			<div class="bestuur-card">
+				<p class="card-function">EHBO Verantwoordelijke</p>
+				<h3 class="card-name">Marthe Vanpoucke</h3>
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+6" alt="Bestuurslid" />
+				</div>
+			</div>
+
+			<div class="bestuur-card">
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+7" alt="Bestuurslid" />
+				</div>
+				<h3 class="card-name">Louis Plovie</h3>
+				<p class="card-function">Dartsman</p>
+			</div>
+
+			<div class="bestuur-card">
+				<p class="card-function">Leeggoed Verantwoordelijke</p>
+				<h3 class="card-name">Elke Selschotter</h3>
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+8" alt="Bestuurslid" />
+				</div>
+			</div>
+
+			<div class="bestuur-card">
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+9" alt="Bestuurslid" />
+				</div>
+				<h3 class="card-name">Jarne Ombecq</h3>
+				<p class="card-function">Congiërge</p>
+			</div>
+
+			<div class="bestuur-card">
+				<p class="card-function">Financieel Verantwoordelijke</p>
+				<h3 class="card-name">Imke Decoene</h3>
+				<div class="card-img">
+					<img src="https://via.placeholder.com/200x200?text=Member+10" alt="Bestuurslid" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.bestuur-section {
+		padding: 4rem 2rem;
+        margin-top: -5rem;
+	}
+
+	.bestuur-container {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.bestuur-title {
+		font-size: 3rem;
+		color: #B82424;
+		text-align: center;
+		margin-bottom: 4rem;
+		font-family: Creolia, sans-serif;
+	}
+
+	.bestuur-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: flex-start;
+		min-height: 600px;
+	}
+
+	.bestuur-card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+		width: auto;
+		max-width: 500px;
+		position: relative;
+	}
+
+	.bestuur-card:nth-child(1) {
+		transform: translate(20px, 40px);
+	}
+
+	.bestuur-card:nth-child(2) {
+		transform: translate(-30px, 80px);
+	}
+
+	.bestuur-card:nth-child(3) {
+		transform: translate(50px, -20px);
+	}
+
+	.bestuur-card:nth-child(4) {
+		transform: translate(-40px, 120px);
+	}
+
+	.bestuur-card:nth-child(5) {
+		transform: translate(30px, 60px);
+	}
+
+	.bestuur-card:nth-child(6) {
+		transform: translate(-50px, 10px);
+	}
+
+	.bestuur-card:nth-child(7) {
+		transform: translate(40px, 100px);
+	}
+
+	.bestuur-card:nth-child(8) {
+		transform: translate(-20px, 50px);
+	}
+
+	.bestuur-card:nth-child(9) {
+		transform: translate(60px, 30px);
+	}
+
+	.bestuur-card:nth-child(10) {
+		transform: translate(-60px, 70px);
+	}
+
+	.card-img {
+		width: 100px;
+		height: 100px;
+		border-radius: 12%;
+		overflow: hidden;
+		flex-shrink: 0;
+		border: 1px solid #B82424;
+	}
+
+	.card-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	.card-name {
+		font-size: 0.95rem;
+		color: #B82424;
+		font-weight: 600;
+		margin-bottom: 0.2rem;
+		text-align: left;
+	}
+
+	.card-function {
+		font-size: 0.8rem;
+		color: #666;
+		margin: 0;
+		text-align: left;
+	}
+
+	@media (max-width: 1024px) {
+		.bestuur-grid {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2.5rem;
+		}
+
+		.bestuur-card {
+			max-width: 260px;
+		}
+
+		.card-img {
+			width: 90px;
+			height: 90px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.bestuur-title {
+			font-size: 2rem;
+			margin-bottom: 3rem;
+		}
+
+		.bestuur-grid {
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2rem;
+		}
+
+		.bestuur-card {
+			max-width: 240px;
+		}
+
+		.card-img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.card-name {
+			font-size: 0.9rem;
+		}
+
+		.card-function {
+			font-size: 0.75rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.bestuur-section {
+			padding: 2rem 1.5rem;
+		}
+
+		.bestuur-title {
+			font-size: 1.75rem;
+			margin-bottom: 2rem;
+		}
+
+		.bestuur-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.bestuur-card {
+			width: 100%;
+			max-width: none;
+		}
+
+		.card-img {
+			width: 70px;
+			height: 70px;
+		}
+
+		.card-name {
+			font-size: 0.85rem;
+		}
+
+		.card-function {
+			font-size: 0.7rem;
+		}
+	}
+</style>

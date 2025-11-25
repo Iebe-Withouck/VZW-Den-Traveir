@@ -1,13 +1,22 @@
 ---
+import siebe from '../assets/Siebe.png';
+import plovie from '../assets/Plovie.png';
+import berquin from '../assets/Berquin.png';
+import marthe from '../assets/Marthe.png';
+import jarne from '../assets/Jarne.png';
+import vanhie from '../assets/Vanhie.png';
+import lomme from '../assets/Lomme.png';
+import elke from '../assets/Elke.png';
 ---
 
 <section id="bestuur" class="bestuur-section">
+	<h2 class="about-title">Bestuur</h2>
 	<div class="bestuur-container">
 		
 		<div class="bestuur-grid">
 			<div class="bestuur-card">
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+1" alt="Bestuurslid" />
+					<img src={siebe.src} alt="Bestuurslid" />
 				</div>
 				<h3 class="card-name">Siebe Selschotter</h3>
 				<p class="card-function">Voorzitter, Klusjesdienst</p>
@@ -17,13 +26,13 @@
 				<p class="card-function">Minivoetbal Coach</p>
 				<h3 class="card-name">Niels Berquin</h3>
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+2" alt="Bestuurslid" />
+					<img src={berquin.src} alt="Bestuurslid" />
 				</div>
 			</div>
 
 			<div class="bestuur-card">
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+3" alt="Bestuurslid" />
+					<img src={vanhie.src} alt="Bestuurslid" />
 				</div>
 				<h3 class="card-name">Louïs Vanhie</h3>
 				<p class="card-function">AB-Inbev Contacteur</p>
@@ -33,7 +42,7 @@
 				<p class="card-function">Reclame & Socials</p>
 				<h3 class="card-name">Lomme Tack</h3>
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+4" alt="Bestuurslid" />
+					<img src={lomme.src} alt="Bestuurslid" />
 				</div>
 			</div>
 
@@ -49,13 +58,13 @@
 				<p class="card-function">EHBO Verantwoordelijke</p>
 				<h3 class="card-name">Marthe Vanpoucke</h3>
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+6" alt="Bestuurslid" />
+					<img src={marthe.src} alt="Bestuurslid" />
 				</div>
 			</div>
 
 			<div class="bestuur-card">
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+7" alt="Bestuurslid" />
+					<img src={plovie.src} alt="Bestuurslid" />
 				</div>
 				<h3 class="card-name">Louis Plovie</h3>
 				<p class="card-function">Dartsman</p>
@@ -65,16 +74,16 @@
 				<p class="card-function">Leeggoed Verantwoordelijke</p>
 				<h3 class="card-name">Elke Selschotter</h3>
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+8" alt="Bestuurslid" />
+					<img src={elke.src} alt="Bestuurslid" />
 				</div>
 			</div>
 
 			<div class="bestuur-card">
 				<div class="card-img">
-					<img src="https://via.placeholder.com/200x200?text=Member+9" alt="Bestuurslid" />
+					<img src={jarne.src} alt="Bestuurslid" />
 				</div>
 				<h3 class="card-name">Jarne Ombecq</h3>
-				<p class="card-function">Congiërge</p>
+				<p class="card-function">Conciërge</p>
 			</div>
 
 			<div class="bestuur-card">
@@ -86,17 +95,35 @@
 			</div>
 		</div>
 	</div>
+	<div class="banner">
+		<div class="banner-content">
+			<span>VZW Den Traveir • Samen Bouwen • Samen Vieren • VZW Den Traveir • Samen Bouwen • Samen Vieren • </span>
+			<span>VZW Den Traveir • Samen Bouwen • Samen Vieren • VZW Den Traveir • Samen Bouwen • Samen Vieren • </span>
+		</div>
+	</div>
 </section>
 
 <style>
 	.bestuur-section {
-		padding: 4rem 2rem;
-        margin-top: -5rem;
+		padding: 4rem 0;
+        margin-top: -8rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-title {
+		align-self: flex-start;
+		margin-left: 8.5rem;
+		font-size: 7rem;
+		color: #B82424;
+		text-align: left;
+        font-family: Creolia, sans-serif;
 	}
 
 	.bestuur-container {
 		max-width: 1400px;
 		margin: 0 auto;
+		padding: 0 5rem;
 	}
 
 	.bestuur-title {
@@ -110,11 +137,12 @@
 	.bestuur-grid {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2rem;
+		gap: 0rem 2rem;
 		justify-content: center;
 		align-items: flex-start;
 		align-content: flex-start;
 		min-height: 600px;
+		margin-top: 2rem;
 	}
 
 	.bestuur-card {
@@ -125,6 +153,7 @@
 		width: auto;
 		max-width: 500px;
 		position: relative;
+		margin-bottom: 5rem;
 	}
 
 	.bestuur-card:nth-child(1) {
@@ -198,82 +227,34 @@
 		text-align: left;
 	}
 
-	@media (max-width: 1024px) {
-		.bestuur-grid {
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 2.5rem;
-		}
-
-		.bestuur-card {
-			max-width: 260px;
-		}
-
-		.card-img {
-			width: 90px;
-			height: 90px;
-		}
+	.banner {
+		width: 100%;
+		background: #B82424;
+		padding: 2rem 0;
+		overflow: hidden;
+		margin-top: 10rem;
 	}
 
-	@media (max-width: 768px) {
-		.bestuur-title {
-			font-size: 2rem;
-			margin-bottom: 3rem;
-		}
-
-		.bestuur-grid {
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-			gap: 2rem;
-		}
-
-		.bestuur-card {
-			max-width: 240px;
-		}
-
-		.card-img {
-			width: 80px;
-			height: 80px;
-		}
-
-		.card-name {
-			font-size: 0.9rem;
-		}
-
-		.card-function {
-			font-size: 0.75rem;
-		}
+	.banner-content {
+		display: flex;
+		white-space: nowrap;
+		animation: scroll 30s linear infinite;
 	}
 
-	@media (max-width: 480px) {
-		.bestuur-section {
-			padding: 2rem 1.5rem;
-		}
+	.banner-content span {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #F2EEE1;
+		font-family: Creolia, sans-serif;
+		padding-right: 2rem;
+	}
 
-		.bestuur-title {
-			font-size: 1.75rem;
-			margin-bottom: 2rem;
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
 		}
-
-		.bestuur-grid {
-			grid-template-columns: 1fr;
-			gap: 1.5rem;
-		}
-
-		.bestuur-card {
-			width: 100%;
-			max-width: none;
-		}
-
-		.card-img {
-			width: 70px;
-			height: 70px;
-		}
-
-		.card-name {
-			font-size: 0.85rem;
-		}
-
-		.card-function {
-			font-size: 0.7rem;
+		100% {
+			transform: translateX(-50%);
 		}
 	}
 </style>
